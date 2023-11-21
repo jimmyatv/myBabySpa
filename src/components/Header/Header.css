@@ -1,0 +1,55 @@
+.header {
+    padding: 0 3rem;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navBar-links>ul {
+    display: flex;
+    list-style: none;
+    gap: 4rem;
+}
+
+.navBar-links>ul>li>a {
+    text-decoration: none;
+    color: var(--primary);
+    position: relative;
+}
+
+.navBar-links>ul>li>a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    left: 0;
+    bottom: -1rem;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.navBar-links>ul>li>a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navBar-links>ul>li>a:hover {
+    color: var(--primary);
+}
+
+.working-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
