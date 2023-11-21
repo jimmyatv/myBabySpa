@@ -33,10 +33,6 @@
     z-index: 1;
 }
 
-.hero-main {
-    display: flex;
-}
-
 .main-baby-photo {
     position: absolute;
     bottom: 0;
@@ -79,4 +75,26 @@
     background: transparent;
     color: var(--primary);
     font-weight: 500;
+}
+
+.social{
+    display: flex;
+    justify-content: end;
+    margin-right: 3rem;
+    color: var(--primary);
+}
+
+.social-icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.social-icon:hover {
+    color: #6ca39f;
+}
+
+.social span:nth-child(1){
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
