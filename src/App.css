@@ -15,6 +15,7 @@
 
   --mainText: 'Cormorant', serif;
   --secondaryText: 'Montserrat', sans-serif;
+  --babyPlan: linear-gradient(210.41deg, #4F8782 1.14%, #62b0dd 100.75%);
 
   --transition: .3s linear;
 }
@@ -27,8 +28,8 @@ body {
   font-size: 1.6rem;
 }
 
-.App {
-  background-color: var(--backgroundColor);
+img {
+  max-width: 100%;
 }
 
 h1,
@@ -44,4 +45,17 @@ p,
 div,
 span {
   font-family: var(--secondaryText);
+}
+
+.App {
+  background-color: var(--backgroundColor);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.relative {
+  position: relative;
 }
