@@ -38,7 +38,7 @@ const Hero = () => {
           transition={transition}
         />
         <div className="social">
-          <span>Pratite nas na društvenim mrežamaaa</span>
+          <span>Pratite nas na društvenim mrežama</span>
           <span className="social-icon"><FaFacebookF/></span>
           <span className="social-icon"><FaInstagram/></span>
         </div>

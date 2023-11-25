@@ -1,0 +1,41 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+.programs h2 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    text-align: center;
+    padding: 3rem 0;
+    letter-spacing: 1.5rem;
+}
+
+.our-programs {
+    display: flex;
+    gap: 2rem;
+}
+.program {
+    background: var(--secondary);
+    padding: 3rem 5rem;
+    border-radius: 1.5rem;
+}
+
+.program:hover {
+    background: var(--babyPlan);
+    color: var(--light);
+}
+.program:hover svg {
+    fill: var(--light);
+    
+}
+
+.program svg {
+    fill: var(--primary);
+    font-size: 3.5rem;
+}
+
+.program h3 {
+    font-size: 2.5rem;    
+    margin: 1rem 0;
+}

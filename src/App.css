@@ -49,6 +49,7 @@ span {
 
 .App {
   background-color: var(--backgroundColor);
+  overflow: hidden;
 }
 
 .container {
@@ -58,4 +59,11 @@ span {
 
 .relative {
   position: relative;
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: var(--mainText);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary);
 }
