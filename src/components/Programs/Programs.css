@@ -3,13 +3,6 @@
     flex-direction: column;
     padding: 5rem 10rem;
 }
-.programs h2 {
-    text-transform: uppercase;
-    font-size: 5rem;
-    text-align: center;
-    padding: 3rem 0;
-    letter-spacing: 1.5rem;
-}
 
 .our-programs {
     display: flex;

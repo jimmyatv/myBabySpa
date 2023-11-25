@@ -5,7 +5,7 @@ import programsData from "../../data/programsData";
 const Programs = () => {
   return (
     <div className="programs">
-      <h2 className="stroke-text">Naši programi</h2>
+      <h2 className="stroke-text main-text">Naši programi</h2>
       <div className="our-programs">
         {programsData.map((program, idx) => {
           return (

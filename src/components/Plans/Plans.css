@@ -1,0 +1,23 @@
+.plans {
+    display: flex;
+    flex-direction: column;
+}
+
+.plans h2 {
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 2rem 4rem;
+}

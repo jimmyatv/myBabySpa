@@ -67,3 +67,11 @@ span {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary);
 }
+
+.main-text {
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  padding: 3rem 0;
+  letter-spacing: 1.5rem;
+}
