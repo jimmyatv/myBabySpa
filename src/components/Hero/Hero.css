@@ -4,7 +4,7 @@
 }
 
 .the-best-babyspa {
-    margin-top: 4rem;
+    margin-top: 2rem;
     background: #868f96;
     border-radius: 4rem;
     width: fit-content;
@@ -17,6 +17,7 @@
     justify-content: flex-start;
     position: absolute;
     left: 10rem;
+    z-index: 6;
 }
 
 .the-best-babyspa>span {
@@ -42,7 +43,7 @@
 
 .hero-text {
     position: absolute;
-    top: 36%;
+    top: 25%;
     left: 50%;
     z-index: 2;
     transform: translate(-70%, 50px);

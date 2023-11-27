@@ -7,24 +7,29 @@ import plansData from "../../data/plansData";
 const Plans = () => {
   return (
     <div className="plans">
-      <h2 className="stroke-text main-text">Zapocni svoju bajku sa nama</h2>
+      <h2 className="main-text">Zapocni svoju bajku sa nama</h2>
       <div className="features container">
         {plansData.map((plan, idx) => {
           return (
             <div className="plan" key={idx}>
               <span>{plan.image}</span>
               <span>{plan.name}</span>
-              {plan.features.map((feature, idx) => {
-                return (
-                  <span className="feature" key={idx}>
-                    <span className="tick">
-                      <GoCheckCircle />
-                    </span>
-                    <span>{feature}</span>
-                  </span>
-                );
-              })}
-              <span>Pridruzi se <FaChevronRight/> </span>
+              <span>{plan.price}</span>
+              <div className="my-plans">
+                {plan.features.map((feature, idx) => {
+                  return (
+                    <div className="feature" key={idx}>
+                      <span className="tick">
+                        <GoCheckCircle />
+                      </span>
+                      <span>{feature}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              <span>
+                Pridruzi se <FaChevronRight />{" "}
+              </span>
             </div>
           );
         })}

@@ -7,11 +7,13 @@
 .our-programs {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
 }
-.program {
+.our-programs .program {
     background: var(--secondary);
     padding: 3rem 5rem;
     border-radius: 1.5rem;
+    width: calc(25% - 20px);
 }
 
 .program:hover {
