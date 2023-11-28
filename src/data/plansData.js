@@ -6,7 +6,7 @@ const plansData = [
     {
         image: <FaAward/>,
         name: 'Basic plan',
-        price: '2500 rsd',
+        price: '2900 rsd',
         features: [
             '30 minuta kvalitetnog programa :)',
             'Besplatna konsultacija sa fizioterapeutom',
@@ -26,7 +26,7 @@ const plansData = [
     {
         image: <FaEnvira/>,
         name: 'Pro plan',
-        price: '2500 rsd',
+        price: '7900 rsd',
         features: [
             '1h kvalitetnog programa :)',
             '24/7 pristup za konsultacije',

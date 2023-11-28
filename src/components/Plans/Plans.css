@@ -15,39 +15,57 @@
 .features {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3.5rem;
     flex-wrap: wrap;
 
 }
+
 .plan {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 2rem;
     padding: 2rem 4rem;
-    width: calc(33% - 20px);
+    width: calc(33% - 35px);
     height: 55rem;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, .4)
 }
+
 .plan:nth-child(odd) {
     background-color: var(--secondary);
-  }
+    color: var(--primary);
+}
+
+.plan:nth-child(even) {
+    background-color: var(--primary);
+    color: var(--light);
+    transform: scale(1.1);
+
+}
+.plan:nth-child(even) .my-plans .feature .tick>svg {
+    fill: var(--secondary);
+}
+
 .feature {
     margin-top: 1rem;
 }
+
 .feature .tick>svg {
     font-size: 2rem;
     margin-right: 1rem;
-    fill: cadetblue;
+    fill: var(--primary);
 }
 
 .plan>span:nth-child(1) {
     font-size: 3.5rem;
 }
+
 .plan>span:nth-child(2) {
     font-size: 2rem;
     text-transform: uppercase;
     margin: 3rem 0;
 }
+
 .plan>span:nth-child(3) {
     font-size: 5rem;
     font-weight: bold;

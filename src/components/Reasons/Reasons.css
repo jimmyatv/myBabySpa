@@ -81,3 +81,22 @@
     font-size: 15rem;
     opacity: 0.8;
 }
+
+/* Key frames */
+@keyframes fanRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg); /* Rotacija u smeru kazaljke na satu */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .babyFoot {
+    animation: fanRotate 2s linear infinite; /* Promeni 2s na željenu brzinu animacije */
+    transform-origin: bottom center; /* Postavi tačku rotacije na dno slike */
+  }
+  
