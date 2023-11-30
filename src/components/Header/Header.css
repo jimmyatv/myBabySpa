@@ -44,10 +44,6 @@
     transform-origin: left;
 }
 
-.navBar-links>ul>li>a:hover {
-    color: var(--primary);
-}
-
 .working-hours {
     display: flex;
     flex-direction: column;
