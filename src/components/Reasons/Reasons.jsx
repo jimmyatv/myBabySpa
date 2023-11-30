@@ -18,7 +18,7 @@ const Reasons = () => {
       <div className="reasons-r relative">
         <div className="important container relative">
           <h3>Važno</h3>
-          <span className="alert"><AiOutlineAlert /></span>
+          <span className="alert icon"><AiOutlineAlert /></span>
           <p>
             Regularna masaža i vežbice umanjuju probleme sa hipertonusom,
             tortikolisom, koje mogu da dovedu do različitih patologija:

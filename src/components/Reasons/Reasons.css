@@ -82,7 +82,7 @@
     opacity: 0.8;
 }
 
-/* Key frames */
+/* Key frames foot */
 @keyframes fanRotate {
     0% {
       transform: rotate(0deg);
@@ -100,3 +100,20 @@
     transform-origin: bottom center; /* Postavi tačku rotacije na dno slike */
   }
   
+  .reasons-r .alert.icon {
+    position: absolute;
+    top: -0.5rem;
+    left: 15rem;
+    z-index: 1;
+    animation: alertMove 2s ease-in-out infinite;
+}
+
+/* Key frames alert */
+@keyframes alertMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

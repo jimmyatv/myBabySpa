@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Newsletter from './components/Newsletter/Newsletter';
 import Plans from './components/Plans/Plans';
@@ -13,6 +14,7 @@ const App = () => {
       <Programs/>
       <Plans/>
       <Newsletter/>
+      <Footer/>
     </div>
   );
 };

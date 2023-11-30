@@ -1,25 +1,95 @@
 .newsletter {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: var(--secondary);
+
+}
+.newsletter > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    border-radius: 29rem 29rem 0 0 ;
+    pointer-events: none;
+    z-index: 1;
 }
 
-.our-newletter {
+.newsletter-form {
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-form>h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--babyColor);
+}
+.form {
+    margin-top: 2rem;
     display: flex;
-    gap: 2rem;
-    width: 100%;
-    height: 70vh;
+    flex-direction: column;
 }
 
-.newsletter-l {
-    background-color: red;
-    width: 100%;
+.form input {
+    padding: 1rem 2rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    background-color: transparent;
+    outline: none;
+    font-size: 2rem;
+
+}
+.form input::placeholder {
+    color: var(--dark);
+    font-family: var(--secondaryText);
+    font-size: 2rem;
+    font-weight: 500;
+
 }
 
-.newsletter-r {
-    border: 2px solid blue;
-    width: 100%;
+.form button {
+    width: fit-content;
+    margin-top: 1.4rem;
 }
+
+.baby-n {
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    z-index: 3;
+}
+.baby-n>svg {
+    font-size: 10rem;
+    color: var(--primary);
+}
+
+/* Key frames */
+@keyframes fanRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg); /* Rotacija u smeru kazaljke na satu */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .baby-n {
+    animation: fanRotate 2s linear infinite; /* Promeni 2s na željenu brzinu animacije */
+    transform-origin: bottom center; /* Postavi tačku rotacije na dno slike */
+  }
+
+
 
 
 

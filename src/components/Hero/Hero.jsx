@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="hero-text">
           <h1>Baby spa srbija - jedinstvena usluga za bebe i roditelje</h1>
           <p>Hidroterapija i masaža uz razvojne vežbe za bebe i malu decu</p>
-          <a href="">Zakazati</a>
+          <a className="btn" href="">Zakazati</a>
         </div>
         <motion.img
           className="main-baby-photo"

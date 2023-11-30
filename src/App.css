@@ -8,6 +8,7 @@
   --primary: #4F8782;
   --secondary: #EAE4D9;
   --lightGray: #E0E1DB;
+  --babyColor: #414948;
   --dark: #000;
   --light: #fff;
   --textColor: #242c2b;
@@ -50,6 +51,24 @@ span {
 .App {
   background-color: var(--backgroundColor);
   overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background: var(--primary);
+  border-radius: 99px;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primary);
+  font-weight: 500;
 }
 
 .container {

@@ -60,24 +60,6 @@
     margin: 5rem 0;
 }
 
-.hero-text>a {
-    text-decoration: none;
-    padding: 1.5rem 5rem;
-    background: var(--primary);
-    border-radius: 99px;
-    text-transform: uppercase;
-    color: white;
-    border: 2px solid var(--primary);
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.hero-text>a:hover {
-    background: transparent;
-    color: var(--primary);
-    font-weight: 500;
-}
-
 .social{
     display: flex;
     justify-content: end;
