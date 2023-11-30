@@ -32,6 +32,8 @@
 }
 .footer-bottom>div {
     width: calc(33% - 20px);
+    height: 20rem;
+    text-align: center;
 }
 
 .logo-white {
@@ -41,4 +43,31 @@
 .logo-white>img {
     width: 120px;
 }
+
+/* footer bottom */
+.footer-bottom>div {
+    padding: 2rem 3rem;
+}
+
+.footer-bottom>div:nth-child(1),.footer-bottom>div:nth-child(2),.footer-bottom>div:nth-child(3) {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--secondary);
+}
+
+.footer-bottom>div .social-footer a {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    transition: var(--transition);
+    margin-right: 0.5rem;
+}
+
+.footer-bottom>div .social-footer a:nth-child(1):hover {
+    color: #1877F2;
+}
+.footer-bottom>div .social-footer a:nth-child(2):hover {
+    color: #d62976 ;
+}
+
 
