@@ -29,9 +29,13 @@ const Footer = () => {
             </span>
           </div>
           <div>
-          <span className="social-footer">
-              <a href=""><FaFacebookF /></a>
-              <a href=""><FaInstagram /></a> 
+            <span className="social-footer">
+              <a href="">
+                <FaFacebookF />
+              </a>
+              <a href="">
+                <FaInstagram />
+              </a>
             </span>
             <p>
               <FaRegCopyright /> Sva prava su zadržana
@@ -41,8 +45,12 @@ const Footer = () => {
             <p>Sajt razvijen</p>
             <p>Aleksandar Rasic</p>
             <span className="social-footer">
-              <a href=""><FaFacebookF /></a>
-              <a href=""><FaInstagram /></a> 
+              <a href="">
+                <FaFacebookF />
+              </a>
+              <a href="">
+                <FaInstagram />
+              </a>
             </span>
           </div>
         </div>
