@@ -117,3 +117,27 @@
         transform: translateY(-10px);
     }
 }
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .reasons {
+        flex-direction: column-reverse;
+        padding: 5rem 0;
+    }
+
+    .reasons-l {
+        padding: 4rem 2rem;
+    }
+    .reasons-l>span {
+        padding: 0.7rem 2rem;
+    }
+
+    .reasons .babyFoot {
+        bottom: 20rem;
+        right: 2rem;
+    }
+    
+    .reasons .babyFoot>svg {
+        font-size: 9rem;
+    }
+}
