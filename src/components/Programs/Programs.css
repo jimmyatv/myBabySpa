@@ -1,0 +1,54 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+.our-programs {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.our-programs .program {
+    background: var(--secondary);
+    padding: 3rem 5rem;
+    border-radius: 1.5rem;
+    width: calc(25% - 20px);
+}
+
+.program:hover {
+    background: var(--babyPlan);
+    color: var(--light);
+}
+.program:hover svg {
+    fill: var(--light);
+    
+}
+
+.program svg {
+    fill: var(--primary);
+    font-size: 3.5rem;
+}
+
+.program h3 {
+    font-size: 2.5rem;    
+    margin: 1rem 0;
+}
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+    .programs {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .our-programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-programs .program {
+        width: 100%;
+    }
+}

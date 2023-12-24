@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4F8782;
+  --secondary: #EAE4D9;
+  --lightGray: #E0E1DB;
+  --babyColor: #414948;
+  --dark: #000;
+  --light: #fff;
+  --textColor: #242c2b;
+  --backgroundColor: #FFFDFC;
+
+  --mainText: 'Cormorant', serif;
+  --secondaryText: 'Montserrat', sans-serif;
+  --babyPlan: linear-gradient(210.41deg, #4F8782 1.14%, #62b0dd 100.75%);
+
+  --transition: .3s linear;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--mainText);
+}
+
+p,
+div,
+span {
+  font-family: var(--secondaryText);
+}
+
+.App {
+  background-color: var(--backgroundColor);
+  overflow: hidden;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  background: var(--primary);
+  border-radius: 99px;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: var(--mainText);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary);
+}
+
+.main-text {
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  padding: 3rem 0;
+  letter-spacing: 1.5rem;
+}

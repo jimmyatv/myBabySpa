@@ -1,0 +1,147 @@
+.reasons {
+    display: flex;
+}
+.reasons-l {
+    height: 60rem;
+    flex: 40%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 2rem;
+}
+
+.reasons-l::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../../assets/massageBaby.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    border-radius: 5rem;
+    z-index: 1;
+
+}
+.reasons-l>span {
+    padding: 1.5rem 5rem;
+    background: var(--primary);
+    opacity: 0.9;
+    border-radius: 99px;
+    color: var(--light);
+    z-index: 2;
+    width: fit-content;
+}
+
+.reasons-r {
+    height: 60rem;
+    flex: 40%;
+}
+
+.reasons-r .important {
+    margin-top: 8rem;
+}
+
+.reasons-r h3 {
+    font-size: 7.5rem;
+    color: var(--primary);
+    z-index: 2;
+    position: relative;
+}
+
+.reasons-r .alert {
+    position: absolute;
+    top: -0.5rem;
+    left: 15rem;
+    z-index: 1;
+}
+
+.reasons-r .alert>svg {
+    fill: #ffa500;
+    font-size: 5.5rem;
+}
+
+.reasons-r p {
+    margin: 3rem 0;
+    font-size: 2rem;
+}
+
+.reasons .babyFoot {
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem;
+}
+
+.reasons .babyFoot>svg {
+    fill: var(--primary);
+    font-size: 15rem;
+    opacity: 0.8;
+}
+
+/* Key frames foot */
+@keyframes fanRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg); /* Rotacija u smeru kazaljke na satu */
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .babyFoot {
+    animation: fanRotate 2s linear infinite; /* Promeni 2s na željenu brzinu animacije */
+    transform-origin: bottom center; /* Postavi tačku rotacije na dno slike */
+  }
+  
+  .reasons-r .alert.icon {
+    position: absolute;
+    top: -0.5rem;
+    left: 15rem;
+    z-index: 1;
+    animation: alertMove 2s ease-in-out infinite;
+}
+
+/* Key frames alert */
+@keyframes alertMove {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+    .reasons {
+        flex-direction: column-reverse;
+        padding: 2rem 0;
+    }
+
+    .reasons-l {
+        padding: 4rem 2rem;
+    }
+    .reasons-l>span {
+        padding: 0.7rem 2rem;
+    }
+
+    .reasons .babyFoot {
+        bottom: 21rem;
+        right: 2rem;
+    }
+    
+    .reasons .babyFoot>svg {
+        font-size: 8.9rem;
+    }
+    .reasons-l::after {
+        border-radius: 1.5rem;
+    }
+}
