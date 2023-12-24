@@ -86,11 +86,13 @@
 /* Media Query max-width 576px */
 @media screen and (max-width: 576px) {
     .social {
+        margin-right: unset;
+        align-items: center;
         justify-content: center;
     }
 
     .hero-text {
-        top: 27%;
+        top: 35%;
         left: 0;
         right: 0;
         margin: auto;
@@ -104,17 +106,14 @@
     }
 
     .hero-text>h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .the-best-babyspa {
         left: 0;
         right: 0;
         margin: 4.5rem auto;
+        z-index: 1;
     }
-}
-
-/* Media Query max-width 375px - iPhone SE */
-@media screen and (max-width: 375px) {
-   
+    
 }

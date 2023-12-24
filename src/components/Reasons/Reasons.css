@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin: 0 2rem;
 }
 
 .reasons-l::after {
@@ -133,11 +134,14 @@
     }
 
     .reasons .babyFoot {
-        bottom: 20rem;
+        bottom: 21rem;
         right: 2rem;
     }
     
     .reasons .babyFoot>svg {
         font-size: 9rem;
+    }
+    .reasons-l::after {
+        border-radius: 1.5rem;
     }
 }

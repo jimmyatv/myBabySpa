@@ -8,7 +8,8 @@
     background-color: var(--secondary);
 
 }
-.newsletter > img {
+
+.newsletter>img {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,7 +17,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.3;
-    border-radius: 29rem 29rem 0 0 ;
+    border-radius: 29rem 29rem 0 0;
     pointer-events: none;
     z-index: 1;
 }
@@ -32,6 +33,7 @@
     text-transform: uppercase;
     color: var(--babyColor);
 }
+
 .form {
     margin-top: 2rem;
     display: flex;
@@ -47,6 +49,7 @@
     font-size: 2rem;
 
 }
+
 .form input::placeholder {
     color: var(--dark);
     font-family: var(--secondaryText);
@@ -66,6 +69,7 @@
     right: 30%;
     z-index: 3;
 }
+
 .baby-n>svg {
     font-size: 10rem;
     color: var(--primary);
@@ -74,22 +78,31 @@
 /* Key frames */
 @keyframes fanRotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     50% {
-      transform: rotate(10deg); /* Rotacija u smeru kazaljke na satu */
+        transform: rotate(10deg);
+        /* Rotacija u smeru kazaljke na satu */
     }
+
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
-  
-  .baby-n {
-    animation: fanRotate 2s linear infinite; /* Promeni 2s na željenu brzinu animacije */
-    transform-origin: bottom center; /* Postavi tačku rotacije na dno slike */
-  }
+}
 
+.baby-n {
+    animation: fanRotate 2s linear infinite;
+    /* Promeni 2s na željenu brzinu animacije */
+    transform-origin: bottom center;
+    /* Postavi tačku rotacije na dno slike */
+}
 
-
-
-
+@media screen and (max-width: 768px) {
+    .newsletter {
+        padding:0 2rem;
+    }
+    .newsletter-form>h2 {
+        font-size: 3.8rem;
+    }
+}

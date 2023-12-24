@@ -5,7 +5,7 @@ import { GiFootprint } from "react-icons/gi";
 
 const Reasons = () => {
   return (
-    <div className="reasons container">
+    <div className="reasons">
       <div className="reasons-l">
         <span>Razvoj motornih sposobnosti</span>
         <span>Podrška zdravom rastu I razvoju deteta</span>

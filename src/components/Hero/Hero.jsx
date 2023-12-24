@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
 import { motion } from "framer-motion";
@@ -7,6 +7,19 @@ import { FaFacebookF , FaInstagram  } from "react-icons/fa";
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
+  const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 576);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWideScreen(window.innerWidth > 576);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="hero">
@@ -29,14 +42,22 @@ const Hero = () => {
           <p>Hidroterapija i masaža uz razvojne vežbe za bebe i malu decu</p>
           <a className="btn" href="">Zakazati</a>
         </div>
-        <motion.img
-          className="main-baby-photo"
-          src={mainBaby}
-          alt=""  
-          initial={{ right: "-50rem" }}
-          whileInView={{ right: "-10rem" }}
-          transition={transition}
-        />
+        {isWideScreen ? (
+          <motion.img
+            className="main-baby-photo"
+            src={mainBaby}
+            alt=""
+            initial={{ right: "-50rem" }}
+            whileInView={{ right: "-10rem" }}
+            transition={transition}
+          />
+        ) : (
+          <img
+            className="main-baby-photo"
+            src={mainBaby}
+            alt=""
+          />
+        )}
         <div className="social">
           <span>Pratite nas na društvenim mrežama</span>
           <span className="social-icon"><FaFacebookF/></span>

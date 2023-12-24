@@ -97,4 +97,7 @@
         
         transform: scale(1);
     }
+    .main-text {
+        font-size: 4rem;
+    }
 }
