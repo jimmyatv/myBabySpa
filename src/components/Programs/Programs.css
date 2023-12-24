@@ -34,3 +34,21 @@
     font-size: 2.5rem;    
     margin: 1rem 0;
 }
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+    .programs {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .our-programs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-programs .program {
+        width: 100%;
+    }
+}

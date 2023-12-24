@@ -11,17 +11,17 @@ const testemonialsData = [
     },
     {
         image: testemonial2,
-        review: 'Usluga fenomenalna , preporuke',
+        review: 'Prezadovoljna sam uslugama i celukupnog programa. PREPORUKE',
         name: 'Una Mihajlovic'
     },
     {
         image: testemonial3,
-        review: 'Odnos cene i kvaliteta na zavidnom nivou ! BRAVO',
+        review: 'Prezadovoljna sam uslugama i celukupnog programa. PREPORUKE',
         name: 'Teodora Ilic'
     },
     {
         image: testemonial4,
-        review: 'Ovo sam ja kada sam bio mlad i lep!',
+        review: 'Prezadovoljna sam uslugama i celukupnog programa. PREPORUKE',
         name: 'Milan Tasic'
     }
 

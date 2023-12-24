@@ -32,7 +32,7 @@ const Hero = () => {
         <motion.img
           className="main-baby-photo"
           src={mainBaby}
-          alt=""
+          alt=""  
           initial={{ right: "-50rem" }}
           whileInView={{ right: "-10rem" }}
           transition={transition}

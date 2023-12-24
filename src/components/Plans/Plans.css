@@ -42,6 +42,7 @@
     transform: scale(1.1);
 
 }
+
 .plan:nth-child(even) .my-plans .feature .tick>svg {
     fill: var(--secondary);
 }
@@ -75,4 +76,25 @@
 
 .my-plans {
     margin-top: 2rem;
+}
+
+/* Media Query max-width 375px - iPhone SE */
+@media screen and (max-width: 576px) {
+    .plans {
+        height: fit-content;
+    }
+    .plans .container {
+        width: 100%;
+    }
+    .plan {
+        width: 100%;
+    }
+    .features  {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .plan:nth-child(even) {
+        
+        transform: scale(1);
+    }
 }
