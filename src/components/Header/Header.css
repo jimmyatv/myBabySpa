@@ -175,3 +175,14 @@
         font-weight: bold;
     }
 }
+
+/* Media Query */
+@media screen and (max-width: 576px) {
+    .working-hours {
+        display: none;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+}
