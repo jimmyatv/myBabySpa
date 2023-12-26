@@ -19,6 +19,10 @@
     list-style: none;
 }
 
+.navBar-links>ul>li {
+    margin-right: 2rem;
+}
+
 .navBar-links>ul>li>a {
     text-decoration: none;
     color: var(--primary);
@@ -141,8 +145,13 @@
         opacity: 0.9;
 
     }
+
     .navBar-links ul {
         flex-direction: column;
+    }
+
+    .navBar-links>ul>li {
+        margin: 0;
     }
 
     .navBar-links a {

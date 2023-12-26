@@ -59,7 +59,7 @@ const Hero = () => {
           />
         )}
         <div className="social">
-          <span>Pratite nas na društvenim mrežama</span>
+          <span>Zapratite nas</span>
           <span className="social-icon"><FaFacebookF/></span>
           <span className="social-icon"><FaInstagram/></span>
         </div>
