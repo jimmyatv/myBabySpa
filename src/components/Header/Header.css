@@ -1,5 +1,5 @@
 .header {
-    padding: 0 3rem;
+    padding: 0 2rem;
     position: relative;
     z-index: 5;
 }
@@ -188,9 +188,5 @@
 @media screen and (max-width: 576px) {
     .working-hours {
         display: none;
-    }
-
-    .header {
-        padding: 1.5rem;
     }
 }

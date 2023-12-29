@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="hero-text">
           <h1>Baby spa srbija - jedinstvena usluga za bebe i roditelje</h1>
           <p>Hidroterapija i masaža uz razvojne vežbe za bebe i malu decu</p>
-          <a className="btn" href="">Zakazati</a>
+          <a className="btn" href="">Pišite nam</a>
         </div>
         {isWideScreen ? (
           <motion.img
@@ -58,11 +58,6 @@ const Hero = () => {
             alt=""
           />
         )}
-        <div className="social">
-          <span>Zapratite nas</span>
-          <span className="social-icon"><FaFacebookF/></span>
-          <span className="social-icon"><FaInstagram/></span>
-        </div>
       </div>
     </div>
   );
