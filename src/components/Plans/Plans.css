@@ -1,7 +1,7 @@
 .plans {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     background-image: url(../../assets/waveBaby.png);
     background-position: center;
     background-size: cover;
@@ -17,6 +17,7 @@
     justify-content: center;
     gap: 3.5rem;
     flex-wrap: wrap;
+    padding: 4rem 0;
 
 }
 
