@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myBabySpa/static/css/main.33798fe1.css",
-    "main.js": "/myBabySpa/static/js/main.8ff813e8.js",
+    "main.css": "/myBabySpa/static/css/main.0d54d2e0.css",
+    "main.js": "/myBabySpa/static/js/main.2561a310.js",
     "static/js/787.b04bf046.chunk.js": "/myBabySpa/static/js/787.b04bf046.chunk.js",
     "static/media/showerBaby.jpg": "/myBabySpa/static/media/showerBaby.7527658d4c0225d748d2.jpg",
     "static/media/mainBaby.png": "/myBabySpa/static/media/mainBaby.a8a8b90bd9c59f1c4eb7.png",
@@ -13,12 +13,12 @@
     "static/media/babyLogo.svg": "/myBabySpa/static/media/babyLogo.470455647f0db4dcb1a4399b2f3b2e34.svg",
     "static/media/babyLogoWhite.svg": "/myBabySpa/static/media/babyLogoWhite.54c4eb2b24421e94e6a7532f4bdc1fab.svg",
     "index.html": "/myBabySpa/index.html",
-    "main.33798fe1.css.map": "/myBabySpa/static/css/main.33798fe1.css.map",
-    "main.8ff813e8.js.map": "/myBabySpa/static/js/main.8ff813e8.js.map",
+    "main.0d54d2e0.css.map": "/myBabySpa/static/css/main.0d54d2e0.css.map",
+    "main.2561a310.js.map": "/myBabySpa/static/js/main.2561a310.js.map",
     "787.b04bf046.chunk.js.map": "/myBabySpa/static/js/787.b04bf046.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33798fe1.css",
-    "static/js/main.8ff813e8.js"
+    "static/css/main.0d54d2e0.css",
+    "static/js/main.2561a310.js"
   ]
 }
