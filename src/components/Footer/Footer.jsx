@@ -14,7 +14,6 @@ const Footer = () => {
         <div className="logo-white">
           <img src={babyLogoWhite} alt="" />
         </div>
-        <Header />
         <div className="footer-bottom">
           <div>
             <span>Radno vreme:</span>

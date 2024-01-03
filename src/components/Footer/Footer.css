@@ -70,4 +70,26 @@
     color: #d62976 ;
 }
 
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    .footer-bottom>div:nth-child(1), .footer-bottom>div:nth-child(2), .footer-bottom>div:nth-child(3) {
+       justify-content: unset;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .footer-bottom>div {
+        width: unset;
+        height: unset;
+        padding: 1rem 1.5rem;
+    }
+
+    .footer-wraper header {
+        display: none;
+    }
+
+}
+
 
