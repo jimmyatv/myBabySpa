@@ -1,4 +1,5 @@
 import './App.css';
+import DropDown from './components/DropDown/DropDown';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Newsletter from './components/Newsletter/Newsletter';
@@ -17,6 +18,7 @@ const App = () => {
       <Plans/>
       <Newsletter/>
       <Footer/>
+      <DropDown/>
     </div>
   );
 };
