@@ -13,8 +13,8 @@ const DropDown = () => {
         <div className={`list ${isOpen ? 'is-active' : ''}`}>
             <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaFacebookF/></a>
             <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaInstagram /></a>
-            <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><GoMail /></a>
-            <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaPhoneAlt /></a>
+            <a href="mailto:rasic.alexandar@gmail.com" className={`btn-style ${isOpen ? 'a-active' : ''}`}><GoMail /></a>
+            <a href="tel:+381604112983" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaPhoneAlt /></a>
         </div>
         <div className='btn-style' onClick={() => {setIsOpen(!isOpen)}}><FaRegMessage /></div>
     </div>

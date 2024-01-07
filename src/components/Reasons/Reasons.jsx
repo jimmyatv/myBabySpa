@@ -2,18 +2,19 @@ import React from "react";
 import "./Reasons.css";
 import { AiOutlineAlert } from "react-icons/ai";
 import { GiFootprint } from "react-icons/gi";
+import { IoSparklesOutline } from "react-icons/io5";
 
 const Reasons = () => {
   return (
     <div className="reasons">
       <div className="reasons-l">
-        <span>Razvoj motornih sposobnosti</span>
-        <span>Podrška zdravom rastu I razvoju deteta</span>
-        <span>Poboljšava cirkulaciju</span>
-        <span>Aktivira rad mozga</span>
-        <span>Utiče na pravilan rad nervnog sistema</span>
-        <span>Umirujuči efekat</span>
-        <span>Umanjuje grčeve kod beba</span>
+        <span><IoSparklesOutline />Razvoj motornih sposobnosti</span>
+        <span><IoSparklesOutline />Podrška zdravom rastu I razvoju deteta</span>
+        <span><IoSparklesOutline />Poboljšava cirkulaciju</span>
+        <span><IoSparklesOutline />Aktivira rad mozga</span>
+        <span><IoSparklesOutline />Utiče na pravilan rad nervnog sistema</span>
+        <span><IoSparklesOutline />Umirujuči efekat</span>
+        <span><IoSparklesOutline />Umanjuje grčeve kod beba</span>
       </div>
       <div className="reasons-r relative">
         <div className="important container relative">
