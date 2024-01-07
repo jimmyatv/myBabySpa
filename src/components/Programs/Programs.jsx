@@ -10,31 +10,29 @@ const Programs = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1024,
+        breakpoint: 1324,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 968,
         settings: {
           slidesToShow: 2,
+          centerMode: true,
+          centerPadding: '8%', 
         },
       },
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '4%',
         },
       },
     ],

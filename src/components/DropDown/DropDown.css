@@ -29,10 +29,12 @@
     opacity: 0;
     text-decoration: none;
     color: var(--light);
+    pointer-events: none;
 }
 
 .list>a.a-active {
     opacity: 1;
+    pointer-events: all;
 }
 
 .list>a:nth-child(1).a-active {
