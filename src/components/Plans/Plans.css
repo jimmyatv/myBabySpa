@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    background-image: url(../../assets/waveBaby.png);
+    background-image: url(../../assets/waveBaby3.svg);
     background-position: center;
     background-size: cover;
 }
@@ -26,9 +26,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 2rem;
-    padding: 2rem 4rem;
+    padding: 6rem 4rem;
     width: calc(33% - 35px);
-    height: 55rem;
     box-shadow: 1px 2px 13px rgba(0, 0, 0, .4)
 }
 
@@ -79,8 +78,8 @@
     margin-top: 2rem;
 }
 
-/* Media Query max-width 375px - iPhone SE */
-@media screen and (max-width: 576px) {
+/* Media Query */
+@media screen and (max-width: 1200px) {
     .plans {
         height: fit-content;
     }

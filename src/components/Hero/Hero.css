@@ -4,18 +4,18 @@
 }
 
 .the-best-babyspa {
-    background: #868f96;
     border-radius: 4rem;
     width: fit-content;
     padding: 20px 13px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--dark);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     position: absolute;
     left: 10rem;
+    border: 2px solid var(--primary);
     z-index: 2;
 }
 
@@ -64,7 +64,7 @@
 @media screen and (max-width: 576px) {
 
     .hero-text {
-        top: 35%;
+        top: 25%;
         left: 0;
         right: 0;
         margin: auto;
@@ -82,8 +82,8 @@
     }
 
     .the-best-babyspa {
-        top: 20%;
-        left: 2%;
+        top: 14%;
+        left: 3%;
         right: 0;
         z-index: 1;
     }

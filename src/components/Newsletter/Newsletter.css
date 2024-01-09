@@ -5,7 +5,7 @@
     width: 100%;
     height: 80vh;
     overflow: hidden;
-    background-color: var(--secondary);
+    background-color: var(--backgroundColor);
 
 }
 

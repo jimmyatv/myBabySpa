@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
 import babyLogoWhite from "../../assets/babyLogoWhite.svg";
-import Header from "../Header/Header";
+import navBarData from "../../data/navBarData";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineAtSymbol } from "react-icons/hi2";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,6 +15,17 @@ const Footer = () => {
           <img src={babyLogoWhite} alt="" />
         </div>
         <div className="footer-bottom">
+          <div>
+            <ul>
+              {navBarData.map((link, idx) => {
+                return (
+                  <li key={idx}>
+                    <a href={link.url}>{link.title}</a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <div>
             <span>Radno vreme:</span>
             <span>Pon - Pet od 11:00 do 19:00</span>
@@ -28,31 +39,16 @@ const Footer = () => {
             </span>
           </div>
           <div>
+            <span>Sajt razvijen</span>
+            <span>Aleksandar Rasic</span>
             <span className="social-footer">
-              <a href="">
-                <FaFacebookF />
-              </a>
-              <a href="">
-                <FaInstagram />
-              </a>
-            </span>
-            <p>
-              <FaRegCopyright /> Sva prava su zadržana
-            </p>
-          </div>
-          <div>
-            <p>Sajt razvijen</p>
-            <p>Aleksandar Rasic</p>
-            <span className="social-footer">
-              <a href="">
-                <FaFacebookF />
-              </a>
-              <a href="">
-                <FaInstagram />
+              <a href="https://www.linkedin.com/in/aleksandar-rasic-jimmy/" target="_blank">
+                <FaLinkedin />
               </a>
             </span>
           </div>
         </div>
+        <p><FaRegCopyright/> 2024 Little one baby spa <br /> Sva prava zadržana</p>
       </div>
     </div>
   );
