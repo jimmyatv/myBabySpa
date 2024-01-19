@@ -1,4 +1,5 @@
 import './App.css';
+import BackToTop from './components/BackToTop/BackToTop';
 import DropDown from './components/DropDown/DropDown';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
@@ -19,6 +20,7 @@ const App = () => {
       <Newsletter/>
       <Footer/>
       <DropDown/>
+      <BackToTop/>
     </div>
   );
 };

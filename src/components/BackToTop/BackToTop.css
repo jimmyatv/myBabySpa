@@ -1,0 +1,45 @@
+@keyframes bounceUpDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px); 
+    }
+  }
+  
+  .btt {
+    position: fixed;
+    bottom: 2rem;
+    right: -8rem;
+    z-index: 100;
+    transition: 300ms all ease;
+  }
+  
+  .btt svg {
+    font-size: 3rem;
+    color: var(--primary);
+    animation: bounceUpDown 2s infinite;
+
+  }
+  
+  .btt-up {
+    width: 65px;
+    height: 65px;
+    padding: 8px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    box-shadow: 1px 2px 13px rgba(0, 0, 0, 0.6);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btt-active {
+    right: 2rem;
+  }
+  

@@ -7,6 +7,7 @@ const Header = () => {
   const [isBurgerActive, setIsBurgerActive] = useState(false);
   const navBarLinksRef = useRef(null);
   const burgerButtonRef = useRef(null);
+  const [navBar, setNavBar] = useState(false);
 
   const handleBurgerClick = () => {
     setIsBurgerActive((prev) => !prev);
@@ -31,8 +32,26 @@ const Header = () => {
     };
   }, []);
 
+
+  // * Fixed nav bar
+  const fixedNavBar = () => {
+    if(window.scrollY >= 200){
+      setNavBar(true)
+    } else {
+      setNavBar(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', (fixedNavBar));
+
+    return () => {
+      window.addEventListener('scroll', (fixedNavBar));
+    }
+  },[]);
+
   return (
-    <div className="header">
+    <div className={`header ${navBar ? 'header navBar-active' : 'header'}`}>
       <div className="navBar">
         <div className="logo">
           <img src={Logo} alt="" />
