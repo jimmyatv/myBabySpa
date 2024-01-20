@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import babyLogoWhite from "../../assets/babyLogoWhite.svg";
+import logoBaby from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineAtSymbol } from "react-icons/hi2";
@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-wraper container">
         <div className="logo-white">
-          <img src={babyLogoWhite} alt="" />
+          <img src={logoBaby} alt="" />
         </div>
         <div className="footer-bottom">
           <div>

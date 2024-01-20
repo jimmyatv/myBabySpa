@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary: #4F8782;
+  --primary: #A57865;
   --secondary: #EAE4D9;
   --lightGray: #E0E1DB;
   --babyColor: #414948;
@@ -16,7 +16,7 @@
 
   --mainText: 'Cormorant', serif;
   --secondaryText: 'Montserrat', sans-serif;
-  --babyPlan: linear-gradient(210.41deg, #4F8782 1.14%, #62b0dd 100.75%);
+  --babyPlan: linear-gradient(245deg, #A57865 1.14%, #eacbbd 100.75%);
 
   --transition: .3s linear;
 }

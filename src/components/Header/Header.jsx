@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
-import Logo from "../../assets/babyLogo.svg";
+import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
 
 const Header = () => {
