@@ -1,24 +1,29 @@
-import {React, useState} from 'react';
-import { FaRegMessage } from "react-icons/fa6";
-import { FaPhoneAlt, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { GoMail } from "react-icons/go";
+import React, { useState } from 'react';
+import { FaRegMessage } from 'react-icons/fa6';
+import { FaPhoneAlt, FaInstagram, FaFacebookF } from 'react-icons/fa';
+import { GoMail } from 'react-icons/go';
 import './DropDown.css';
 
 const DropDown = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const [isOpen, setIsOpen] = useState(false);
+  const handleButtonClick = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <div className='dropDown'>
-        <div className={`list ${isOpen ? 'is-active' : ''}`}>
-            <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaFacebookF/></a>
-            <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaInstagram /></a>
-            <a href="mailto:rasic.alexandar@gmail.com" className={`btn-style ${isOpen ? 'a-active' : ''}`}><GoMail /></a>
-            <a href="tel:+381604112983" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaPhoneAlt /></a>
-        </div>
-        <div className='btn-style' onClick={() => {setIsOpen(!isOpen)}}><FaRegMessage /></div>
+      <div className={`list ${isOpen ? 'is-active' : ''}`}>
+        <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaFacebookF/></a>
+        <a href="/" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaInstagram /></a>
+        <a href="mailto:rasic.alexandar@gmail.com" className={`btn-style ${isOpen ? 'a-active' : ''}`}><GoMail /></a>
+        <a href="tel:+381604112983" className={`btn-style ${isOpen ? 'a-active' : ''}`}><FaPhoneAlt /></a>
+      </div>
+      <div className={`btn-style ${isOpen ? 'clicked' : ''}`} onClick={handleButtonClick}>
+        <FaRegMessage />
+      </div>
     </div>
-  )
+  );
 };
 
 export default DropDown;

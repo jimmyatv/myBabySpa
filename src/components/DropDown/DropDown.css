@@ -18,7 +18,13 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
 }
+
+.btn-style.clicked {
+    transform: rotate(45deg);
+  }
 
 .dropDown svg {
     font-size: 2.2rem;
@@ -51,6 +57,7 @@
 
 .is-active {
     opacity: 1;
+    transition: transform 0.3s ease;
 }
 
 .dropDown>div:last-child {

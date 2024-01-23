@@ -71,6 +71,15 @@
 
 }
 
+.right-t .arrows {
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
 .arrows>span svg {
     font-size: 3.5rem;
     color: var(--primary);
@@ -85,7 +94,7 @@
 }
 
 /* Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .testemonials {
         flex-direction: column;
         padding: 3rem 2rem;
@@ -111,9 +120,6 @@
     }
     .right-t {
         flex-direction: column;
-    }
-    .right-t .arrows {
-        margin-top: 4rem;
     }
     .right-t>:nth-child(1),.right-t>:nth-child(2) {
         display: none;

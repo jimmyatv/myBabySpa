@@ -35,23 +35,30 @@ const Header = () => {
 
   // * Fixed nav bar
   const fixedNavBar = () => {
-    if(window.scrollY >= 200){
+    let scroll = window.scrollY > 0
+
+    if(scroll > 0){
       setNavBar(true)
     } else {
       setNavBar(false)
     }
   }
 
+  //! SENIOR style
+  // const fixedNavBar = () => {
+  //   setNavBar(window.scrollY > 0)
+  // } // Ako window.scrollY > 0, postaviće se true, inače false.
+
   useEffect(() => {
     window.addEventListener('scroll', (fixedNavBar));
 
     return () => {
-      window.addEventListener('scroll', (fixedNavBar));
+      window.removeEventListener('scroll', (fixedNavBar));
     }
   },[]);
 
   return (
-    <div className={`header ${navBar ? 'header navBar-active' : 'header'}`}>
+    <div className={`header ${navBar ? 'navBar-active' : ''}`}>
       <div className="navBar">
         <div className="logo">
           <img src={Logo} alt="" />
