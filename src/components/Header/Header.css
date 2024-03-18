@@ -73,14 +73,15 @@
 .working-hours>a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--primary);
-    font-weight: bold;
+    color: var(--dark);
+    font-weight: 500;
     margin-right: 10px;
 }
 
 .working-hours>a>svg {
     font-size: 2rem;
     margin-left: 5px;
+    animation: zoomInOut 2s infinite;
 }
 
 .burger {
@@ -218,3 +219,15 @@
         display: none;
     }
 }
+
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

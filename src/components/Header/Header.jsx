@@ -2,8 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { GiAlarmClock } from "react-icons/gi";
+import { FaPhoneVolume, FaClock } from "react-icons/fa6";
 
 const Header = () => {
   const [isBurgerActive, setIsBurgerActive] = useState(false);
@@ -35,18 +34,7 @@ const Header = () => {
   }, []);
 
 
-  // * Fixed nav bar
-  const fixedNavBar = () => {
-    let scroll = window.scrollY > 0
 
-    if (scroll > 0) {
-      setNavBar(true)
-    } else {
-      setNavBar(false)
-    }
-
-    console.log(fixedNavBar)
-  }
 
   //! SENIOR style
   // const fixedNavBar = () => {
@@ -54,6 +42,19 @@ const Header = () => {
   // } // Ako window.scrollY > 0, postaviće se true, inače false.
 
   useEffect(() => {
+    // * Fixed nav bar
+    const fixedNavBar = () => {
+      let scroll = window.scrollY > 0
+
+      if (scroll > 0) {
+        setNavBar(true)
+      } else {
+        setNavBar(false)
+      }
+    };
+
+    fixedNavBar();
+
     window.addEventListener('scroll', (fixedNavBar));
 
     return () => {
@@ -76,15 +77,15 @@ const Header = () => {
             {navBarData.map((link, idx) => {
               return (
                 <li key={idx}>
-                  <a onClick={handleBurgerClick} href={link.url}>{link.title}</a>
+                  <a style={{fontWeight:"500"}} onClick={handleBurgerClick} href={link.url}>{link.title}</a>
                 </li>
               );
             })}
           </ul>
         </div>
         <div className="working-hours">
-          <a href="tel:+381604112983">0604112983<FaPhoneVolume /></a>
-          <a href="#footer">Radno vreme<GiAlarmClock /></a>
+          <a href="tel:+381604112983">+381604112983<FaPhoneVolume /></a>
+          <a href="#footer">Radno vreme<FaClock /></a>
         </div>
         <button
           className={`burger ${isBurgerActive ? "is-active" : ""}`}

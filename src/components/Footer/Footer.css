@@ -1,5 +1,5 @@
 .footer {
-    background: var(--babyPlan);
+    background: var(--secondary);
     padding: 3rem 0;
 }
 .footer-wraper .logo, .footer-wraper .working-hours {

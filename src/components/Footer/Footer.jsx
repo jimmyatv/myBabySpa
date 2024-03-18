@@ -32,11 +32,11 @@ const Footer = () => {
             <span>Pon - Pet od 11:00 do 19:00</span>
             <span>Subota od 10:00 do 14:00</span>
             <span>
-              <FiPhone />+ 381 69 233 69 23
+              <FiPhone />+381604112983
             </span>
             <span>
               <HiOutlineAtSymbol />
-              info@babyspa.rs
+              littleonebabyspa@gmail.com
             </span>
           </div>
           <div>

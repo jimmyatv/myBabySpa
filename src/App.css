@@ -16,7 +16,7 @@
 
   --mainText: 'Cormorant', serif;
   --secondaryText: 'Montserrat', sans-serif;
-  --babyPlan: linear-gradient(245deg, #9a729d 1.14%, #d3b3d5 100.75%);
+  --babyPlan: linear-gradient(245deg, #c18fc6 1.14%, #efe3f0 100.75%);
 
   --transition: .3s linear;
 }
