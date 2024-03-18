@@ -216,7 +216,7 @@
 
 /* Media Query */
 @media screen and (max-width: 576px) {
-    .working-hours {
+    .working-hours>a>span {
         display: none;
     }
 }

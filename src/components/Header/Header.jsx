@@ -84,10 +84,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="working-hours">
-          <a href="tel:+381604112983">+381604112983<FaPhoneVolume /></a>
-          <a href="#footer">Radno vreme<FaClock /></a>
-        </div>
-        <button
+          <a href="tel:+381604112983"><span>+381604112983</span><FaPhoneVolume /></a>
+          <a href="#footer"><span>Radno vreme</span><FaClock /></a>
+          <button
           className={`burger ${isBurgerActive ? "is-active" : ""}`}
           ref={burgerButtonRef}
           onClick={handleBurgerClick}
@@ -96,6 +95,7 @@ const Header = () => {
           <span></span>
           <span></span>
         </button>
+        </div>
       </div>
     </div>
   );
