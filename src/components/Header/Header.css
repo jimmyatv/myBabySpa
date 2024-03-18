@@ -81,6 +81,7 @@
 .working-hours>a>svg {
     font-size: 2rem;
     margin-left: 5px;
+    color: var(--primary);
     animation: zoomInOut 2s infinite;
 }
 

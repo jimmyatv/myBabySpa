@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
 import { motion } from "framer-motion";
-import mainBaby from "../../assets/mainBaby.png";
+// import mainBaby from "../../assets/mainBaby.png";
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
@@ -28,7 +28,7 @@ const Hero = () => {
           <p>Hidroterapija i masaža uz razvojne vežbe za bebe i malu decu</p>
           <a className="btn" href="">Pišite nam</a>
         </div>
-        <img className="main-baby-photo" src={mainBaby} alt="" />
+        {/* <img className="main-baby-photo" src={mainBaby} alt="" /> */}
       </div>
     </div>
   );
