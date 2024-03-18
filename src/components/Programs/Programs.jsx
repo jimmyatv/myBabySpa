@@ -40,6 +40,7 @@ const Programs = () => {
 
   return (
     <div className="programs">
+      <span className="anchor" id="programs"></span>
       <h2 className="stroke-text main-text">Naši programi</h2>
       <Slider {...settings} className="our-programs">
         {programsData.map((program, idx) => (

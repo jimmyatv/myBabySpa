@@ -7,6 +7,8 @@ import plansData from "../../data/plansData";
 const Plans = () => {
   return (
     <div className="plans">
+      <span className="anchor" id="plans"></span>
+
       <h2 className="main-text">Zapocni svoju bajku sa nama</h2>
       <div className="features container">
         {plansData.map((plan, idx) => {

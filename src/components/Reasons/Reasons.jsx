@@ -7,6 +7,7 @@ import { IoSparklesOutline } from "react-icons/io5";
 const Reasons = () => {
   return (
     <div className="reasons">
+      <span className="anchor" id="reasons"></span>
       <div className="reasons-l">
         <span><IoSparklesOutline />Razvoj motornih sposobnosti</span>
         <span><IoSparklesOutline />Podrška zdravom rastu I razvoju deteta</span>
@@ -27,7 +28,7 @@ const Reasons = () => {
             drugih patologija
           </p>
         </div>
-          <div className="babyFoot"><GiFootprint /></div>
+        <div className="babyFoot"><GiFootprint /></div>
       </div>
     </div>
   );

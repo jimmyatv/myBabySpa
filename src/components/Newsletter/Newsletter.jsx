@@ -10,7 +10,8 @@ const Newsletter = () => {
       <span className="baby-n"><GiBabyBottle /></span>
       <div className="our-newletter">
         <div className="newsletter-form">
-          <h2>Pošaljite nam mail <br/> i mi ćemo Vas kontaktirati</h2>
+          <span className="anchor-news" id="newsletter"></span>
+          <h2>Pošaljite nam mail <br /> i mi ćemo Vas kontaktirati</h2>
           <form className="form" action="">
             <input
               type="email"

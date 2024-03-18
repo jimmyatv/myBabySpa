@@ -12,7 +12,6 @@
     position: fixed;
     width: 100%;
     transition: 0.5s all ;
-
 }
 
 .logo img {
@@ -66,9 +65,22 @@
 
 .working-hours {
     display: flex;
-    flex-direction: column;
     gap: 0.5rem;
     justify-content: center;
+    align-items: center;
+}
+
+.working-hours>a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.working-hours>a>svg {
+    font-size: 2rem;
+    margin-left: 5px;
 }
 
 .burger {

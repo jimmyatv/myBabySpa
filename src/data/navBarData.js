@@ -1,10 +1,9 @@
 const navBarData = [
-    { url: '#', title: 'Benifity' },
-    { url: '#', title: 'Usluge' },
-    { url: '#', title: 'Cenovnik' },
-    { url: '#', title: 'O Nama' },
-    { url: '#', title: 'Naš tim' },
-    { url: '#', title: 'Kontakt' }
+    { url: '#reasons', title: 'O nama' },
+    { url: '#testemonials', title: 'Preporuke' },
+    { url: '#programs', title: 'Programi' },
+    { url: '#plans', title: 'Cenovnik' },
+    { url: '#newsletter', title: 'Kontakt' }
   ];
   
   export default navBarData;

@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
 import { motion } from "framer-motion";
 import mainBaby from "../../assets/mainBaby.png";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };

@@ -5,18 +5,18 @@
 }
 
 :root {
-  --primary: #A57865;
-  --secondary: #EAE4D9;
+  --primary: #9a729d;
+  --secondary: #f6f2eb;
   --lightGray: #E0E1DB;
   --babyColor: #414948;
   --dark: #000;
   --light: #fff;
-  --textColor: #242c2b;
-  --backgroundColor: #FFFDFC;
+  --textColor: #363535;
+  --backgroundColor:  #eefcfe;
 
   --mainText: 'Cormorant', serif;
   --secondaryText: 'Montserrat', sans-serif;
-  --babyPlan: linear-gradient(245deg, #A57865 1.14%, #eacbbd 100.75%);
+  --babyPlan: linear-gradient(245deg, #9a729d 1.14%, #d3b3d5 100.75%);
 
   --transition: .3s linear;
 }
@@ -95,4 +95,18 @@ span {
   text-align: center;
   padding: 3rem;
   letter-spacing: 1.5rem;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -80px;
+  visibility: hidden;
+}
+
+.anchor-news {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
 }

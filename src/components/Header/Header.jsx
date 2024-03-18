@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { GiAlarmClock } from "react-icons/gi";
 
 const Header = () => {
   const [isBurgerActive, setIsBurgerActive] = useState(false);
@@ -37,11 +39,13 @@ const Header = () => {
   const fixedNavBar = () => {
     let scroll = window.scrollY > 0
 
-    if(scroll > 0){
+    if (scroll > 0) {
       setNavBar(true)
     } else {
       setNavBar(false)
     }
+
+    console.log(fixedNavBar)
   }
 
   //! SENIOR style
@@ -55,7 +59,7 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', (fixedNavBar));
     }
-  },[]);
+  }, []);
 
   return (
     <div className={`header ${navBar ? 'navBar-active' : ''}`}>
@@ -72,19 +76,15 @@ const Header = () => {
             {navBarData.map((link, idx) => {
               return (
                 <li key={idx}>
-                  <a href={link.url}>{link.title}</a>
+                  <a onClick={handleBurgerClick} href={link.url}>{link.title}</a>
                 </li>
               );
             })}
           </ul>
         </div>
         <div className="working-hours">
-          <span>
-            {" "}
-            <strong>+ 381 60 411 29 83</strong>{" "}
-          </span>
-          <span>Pon - Pet od 11:00 do 19:00</span>
-          <span>Subota od 10:00 do 14:00</span>
+          <a href="tel:+381604112983">0604112983<FaPhoneVolume /></a>
+          <a href="#footer">Radno vreme<GiAlarmClock /></a>
         </div>
         <button
           className={`burger ${isBurgerActive ? "is-active" : ""}`}

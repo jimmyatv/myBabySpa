@@ -1,18 +1,19 @@
 import React from "react";
 import "./Footer.css";
-import logoBaby from "../../assets/logoBaby.png";
+import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineAtSymbol } from "react-icons/hi2";
-import { FaLinkedin, FaTelegramPlane } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="footer">
+      <a className="anchor" id="footer"></a>
       <div className="footer-wraper container">
         <div className="logo-white">
-          <img src={logoBaby} alt="" />
+          <img src={Logo} alt="" />
         </div>
         <div className="footer-bottom">
           <div>
@@ -48,7 +49,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <p><FaRegCopyright/> 2024 Little one baby spa <br /> Sva prava zadržana</p>
+        <p><FaRegCopyright /> 2024 Little one baby spa <br /> Sva prava zadržana</p>
       </div>
     </div>
   );

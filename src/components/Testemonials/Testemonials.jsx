@@ -9,6 +9,7 @@ const Testemonials = () => {
 
   return (
     <div className="testemonials">
+      <span className="anchor" id="testemonials"></span>
       <div className="left-t">
         <span>Testemonials</span>
         <span className="stroke-text"> Sta oni</span>
