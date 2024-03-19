@@ -36,6 +36,9 @@
 .footer-bottom>div {
     padding: 2rem 3rem;
 }
+.footer-bottom>div>ul>li>a {
+    font-size: 2rem;
+}
 
 .footer-bottom>div:nth-child(1),.footer-bottom>div:nth-child(2),.footer-bottom>div:nth-child(3) {
     display: flex;  

@@ -83,6 +83,7 @@
     margin-left: 5px;
     color: var(--primary);
     animation: zoomInOut 2s infinite;
+    margin-top: 5px;
 }
 
 .burger {
