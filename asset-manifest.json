@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/myBabySpa/static/css/main.8794f1ad.css",
-    "main.js": "/myBabySpa/static/js/main.cff819aa.js",
-    "static/js/787.b04bf046.chunk.js": "/myBabySpa/static/js/787.b04bf046.chunk.js",
-    "static/media/showerBaby.jpg": "/myBabySpa/static/media/showerBaby.7527658d4c0225d748d2.jpg",
-    "static/media/massageBaby.jpg": "/myBabySpa/static/media/massageBaby.23d6a123c5b6dab69644.jpg",
-    "static/media/testemonial1.jpg": "/myBabySpa/static/media/testemonial1.d99241cd0c4af136b79f.jpg",
-    "static/media/testemonial3.jpg": "/myBabySpa/static/media/testemonial3.11615daa60c3169f5833.jpg",
-    "static/media/testemonial2.jpg": "/myBabySpa/static/media/testemonial2.410a2beda513189eb4c5.jpg",
-    "static/media/logoBaby.png": "/myBabySpa/static/media/logoBaby.d2ec3725a5aa05df9fda.png",
-    "static/media/testemonial4.jpg": "/myBabySpa/static/media/testemonial4.53b7fe4bfa4b80b89da3.jpg",
-    "static/media/slick.svg": "/myBabySpa/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/myBabySpa/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/myBabySpa/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/myBabySpa/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/myBabySpa/index.html",
-    "static/media/waveBaby4.svg": "/myBabySpa/static/media/waveBaby4.dbb1620641c4e5212c21.svg",
-    "main.8794f1ad.css.map": "/myBabySpa/static/css/main.8794f1ad.css.map",
-    "main.cff819aa.js.map": "/myBabySpa/static/js/main.cff819aa.js.map",
-    "787.b04bf046.chunk.js.map": "/myBabySpa/static/js/787.b04bf046.chunk.js.map"
+    "main.css": "/static/css/main.62661d53.css",
+    "main.js": "/static/js/main.ce90b2b5.js",
+    "static/js/787.b04bf046.chunk.js": "/static/js/787.b04bf046.chunk.js",
+    "static/media/showerBaby.jpg": "/static/media/showerBaby.7527658d4c0225d748d2.jpg",
+    "static/media/massageBaby.jpg": "/static/media/massageBaby.23d6a123c5b6dab69644.jpg",
+    "static/media/testemonial1.jpg": "/static/media/testemonial1.d99241cd0c4af136b79f.jpg",
+    "static/media/testemonial3.jpg": "/static/media/testemonial3.11615daa60c3169f5833.jpg",
+    "static/media/testemonial2.jpg": "/static/media/testemonial2.410a2beda513189eb4c5.jpg",
+    "static/media/logoBaby.png": "/static/media/logoBaby.d2ec3725a5aa05df9fda.png",
+    "static/media/testemonial4.jpg": "/static/media/testemonial4.53b7fe4bfa4b80b89da3.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/waveBaby4.svg": "/static/media/waveBaby4.dbb1620641c4e5212c21.svg",
+    "main.62661d53.css.map": "/static/css/main.62661d53.css.map",
+    "main.ce90b2b5.js.map": "/static/js/main.ce90b2b5.js.map",
+    "787.b04bf046.chunk.js.map": "/static/js/787.b04bf046.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8794f1ad.css",
-    "static/js/main.cff819aa.js"
+    "static/css/main.62661d53.css",
+    "static/js/main.ce90b2b5.js"
   ]
 }
