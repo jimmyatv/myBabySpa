@@ -74,7 +74,7 @@ const Header = () => {
       className={`header ${navBar ? 'navBar-active' : ''}`}>
       <div className="navBar">
         <div className="logo">
-          Ivana<img src={Logo} alt="" />
+          Mare<img src={Logo} alt="" />
         </div>
         <div
           className={`navBar-links ${isBurgerActive ? "is-active" : ""}`}
