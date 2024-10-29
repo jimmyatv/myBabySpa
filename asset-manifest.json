@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.62661d53.css",
-    "main.js": "/static/js/main.ec9e546d.js",
+    "main.js": "/static/js/main.ce90b2b5.js",
     "static/js/787.b04bf046.chunk.js": "/static/js/787.b04bf046.chunk.js",
     "static/media/showerBaby.jpg": "/static/media/showerBaby.7527658d4c0225d748d2.jpg",
     "static/media/massageBaby.jpg": "/static/media/massageBaby.23d6a123c5b6dab69644.jpg",
@@ -17,11 +17,11 @@
     "index.html": "/index.html",
     "static/media/waveBaby4.svg": "/static/media/waveBaby4.dbb1620641c4e5212c21.svg",
     "main.62661d53.css.map": "/static/css/main.62661d53.css.map",
-    "main.ec9e546d.js.map": "/static/js/main.ec9e546d.js.map",
+    "main.ce90b2b5.js.map": "/static/js/main.ce90b2b5.js.map",
     "787.b04bf046.chunk.js.map": "/static/js/787.b04bf046.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.62661d53.css",
-    "static/js/main.ec9e546d.js"
+    "static/js/main.ce90b2b5.js"
   ]
 }
