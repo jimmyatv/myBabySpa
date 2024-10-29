@@ -3,6 +3,9 @@ import "./Header.css";
 import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
 import { FaPhoneVolume, FaClock } from "react-icons/fa6";
+import { motion } from 'framer-motion';
+import {headerVariants} from '../../data/motion';
+
 
 const Header = () => {
   const [isBurgerActive, setIsBurgerActive] = useState(false);
@@ -63,10 +66,15 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`header ${navBar ? 'navBar-active' : ''}`}>
+    <motion.div
+      initial='hidden'
+      whileInView='show'
+      variants={headerVariants}
+      viewport={{ once: false, amount: 0.15 }}
+      className={`header ${navBar ? 'navBar-active' : ''}`}>
       <div className="navBar">
         <div className="logo">
-          <img src={Logo} alt="" />
+          Ivana<img src={Logo} alt="" />
         </div>
         <div
           className={`navBar-links ${isBurgerActive ? "is-active" : ""}`}
@@ -77,7 +85,7 @@ const Header = () => {
             {navBarData.map((link, idx) => {
               return (
                 <li key={idx}>
-                  <a style={{fontWeight:"500"}} onClick={handleBurgerClick} href={link.url}>{link.title}</a>
+                  <a style={{ fontWeight: "500" }} onClick={handleBurgerClick} href={link.url}>{link.title}</a>
                 </li>
               );
             })}
@@ -87,17 +95,17 @@ const Header = () => {
           <a href="tel:+381604112983"><span>+381604112983</span><FaPhoneVolume /></a>
           <a href="#footer"><span>Radno vreme</span><FaClock /></a>
           <button
-          className={`burger ${isBurgerActive ? "is-active" : ""}`}
-          ref={burgerButtonRef}
-          onClick={handleBurgerClick}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+            className={`burger ${isBurgerActive ? "is-active" : ""}`}
+            ref={burgerButtonRef}
+            onClick={handleBurgerClick}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
