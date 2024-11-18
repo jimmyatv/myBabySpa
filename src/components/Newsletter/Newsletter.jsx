@@ -10,8 +10,8 @@ const Newsletter = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_n7yqllb', 'template_rikzy1o', form.current, {
-        publicKey: 'yETjsbyljqVp4iMfM',
+    emailjs.sendForm('service_em0xgui', 'template_ylgaf1l', form.current, {
+        publicKey: 'ucANrHEHf7umWGyCD',
       })
       .then(
         (response) => {
