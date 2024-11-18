@@ -1,9 +1,32 @@
-import React from "react";
+import { React, useRef } from "react";
 import "./Newsletter.css";
+import emailjs from '@emailjs/browser'
 import showerBaby from "../../assets/showerBaby.jpg";
 import { GiBabyBottle } from "react-icons/gi";
 
 const Newsletter = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_n7yqllb', 'template_rikzy1o', form.current, {
+        publicKey: 'yETjsbyljqVp4iMfM',
+      })
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Poruka je uspešno poslata!');
+          // Čisti sva polja u formi
+          form.current.reset();
+        },
+        (error) => {
+          console.error('FAILED...', error);
+          alert(`Došlo je do greške prilikom slanja poruke! Detalji: ${error.text}`);
+        },
+      );
+  };
+
   return (
     <div className="newsletter relative">
       <img src={showerBaby} alt="" />
@@ -12,16 +35,22 @@ const Newsletter = () => {
         <div className="newsletter-form">
           <span className="anchor-news" id="newsletter"></span>
           <h2>Pošaljite nam mail <br /> i mi ćemo Vas kontaktirati</h2>
-          <form className="form" action="">
+          <form ref={form} className="form" onSubmit={sendEmail}>
             <input
-              type="email"
-              name="user_email"
-              placeholder="Vaše ime"
+              type="text"
+              name="user_name"
+              placeholder="Vaše Ime"
               required
             />
             <input
-              type="text"
-              name="number"
+              type="email"
+              name="user_email"
+              placeholder="Vaš email"
+              required
+            />
+            <input
+              type="number"
+              name="user_number"
               placeholder="Vaš broj"
               required
             />

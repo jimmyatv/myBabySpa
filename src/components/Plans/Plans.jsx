@@ -18,20 +18,13 @@ const Plans = () => {
               <span>{plan.name}</span>
               <span>{plan.price}</span>
               <div className="my-plans">
-                {plan.features.map((feature, idx) => {
-                  return (
-                    <div className="feature" key={idx}>
-                      <span className="tick">
-                        <GoCheckCircle />
-                      </span>
-                      <span>{feature}</span>
-                    </div>
-                  );
-                })}
+                <p><strong>Trajanje:</strong>{plan.time}</p>
+                <p><strong>Opis:</strong>{plan.description}</p>
+                <p><strong>Idealno za:</strong>{plan.bestFor}</p>
               </div>
-              <span>
-                Pridruzi se <FaChevronRight />{" "}
-              </span>
+              <a className="joinUs" href="">
+                Pridruzi se <FaChevronRight />
+              </a>
             </div>
           );
         })}
