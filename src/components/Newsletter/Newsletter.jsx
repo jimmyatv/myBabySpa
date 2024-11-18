@@ -11,7 +11,7 @@ const Newsletter = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_em0xgui', 'template_ylgaf1l', form.current, {
-        publicKey: 'ucANrHEHf7umWGyCD',
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
       })
       .then(
         (response) => {
