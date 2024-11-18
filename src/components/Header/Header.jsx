@@ -92,7 +92,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="working-hours">
-          <a href="tel:+381604112983"><span>+381604112983</span><FaPhoneVolume /></a>
+          <a href="tel:+381611145300"><span>+381611145300</span><FaPhoneVolume /></a>
           <a href="#footer"><span>Radno vreme</span><FaClock /></a>
           <button
             className={`burger ${isBurgerActive ? "is-active" : ""}`}
