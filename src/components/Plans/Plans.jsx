@@ -22,9 +22,6 @@ const Plans = () => {
                 <p><strong>Opis:</strong>{plan.description}</p>
                 <p><strong>Idealno za:</strong>{plan.bestFor}</p>
               </div>
-              <a className="joinUs" href="">
-                Pridruzi se <FaChevronRight />
-              </a>
             </div>
           );
         })}

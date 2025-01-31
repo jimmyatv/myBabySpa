@@ -42,12 +42,7 @@ const Newsletter = () => {
               placeholder="Vaše Ime"
               required
             />
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Vaš email"
-              required
-            />
+               
             <input
               type="number"
               name="user_number"
