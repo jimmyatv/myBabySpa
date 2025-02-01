@@ -3,6 +3,7 @@ const navBarData = [
     { url: '#testemonials', title: 'Preporuke' },
     { url: '#programs', title: 'Programi' },
     { url: '#plans', title: 'Cenovnik' },
+    { url: '#gallery', title: 'Galerija' },
     { url: '#newsletter', title: 'Kontakt' }
   ];
   

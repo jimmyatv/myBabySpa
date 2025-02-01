@@ -13,6 +13,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 export default function App() {
     return (
         <div className='gallery'>
+            <span className="anchor" id="gallery"></span>
             <h2 className="main-text">Naša galerija</h2>
             <Swiper
                 effect={'coverflow'}
