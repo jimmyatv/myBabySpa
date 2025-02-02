@@ -1,7 +1,20 @@
 .hero {
     position: relative;
     height: 100vh;
+    z-index: 1;
+    overflow: hidden;
 }
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;  
+    object-position: center; 
+    z-index: -1; 
+}
+
 
 .the-best-babyspa {
     border-radius: 4rem;
@@ -34,53 +47,8 @@
     z-index: 1;
 }
 
-.main-baby-photo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
-
-.hero-text {
-    position: absolute;
-    top: 25%;
-    left: 47%;
-    z-index: 2;
-    transform: translate(-70%, 50px);
-}
-
-.hero-text>h1 {
-    font-size: 4.8rem;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.hero-text>p {
-    font-size: 2rem;
-    margin: 5rem 0;
-}
-
-
 /* Media Query max-width 576px */
 @media screen and (max-width: 576px) {
-
-    .hero-text {
-        top: 25%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        transform: none;
-        width: 90%;
-    }
-
-    .hero-text>p {
-        margin: 3.4rem 0;
-        font-weight: 500;
-    }
-
-    .hero-text>h1 {
-        font-size: 4rem;
-    }
 
     .the-best-babyspa {
         top: 14%;
@@ -91,3 +59,12 @@
     }
 
 }
+
+/* Media Query max-width 576px */
+/* @media screen and (min-width: 991px) {
+
+    .hero-video {
+        width: 100%;
+    }
+
+} */

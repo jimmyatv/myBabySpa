@@ -1,7 +1,7 @@
 .header {
     padding: 0.5rem 2rem;
     position: relative;
-    z-index: 5;
+    z-index: 55;
     transition: 0.5s all ;
     background: transparent;
 }
@@ -40,7 +40,8 @@
 
 .navBar-links>ul>li>a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--dark);
+    font-weight: bold;
     position: relative;
 }
 

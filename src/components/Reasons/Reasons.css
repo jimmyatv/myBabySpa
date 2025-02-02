@@ -1,5 +1,6 @@
 .reasons {
     display: flex;
+    padding-top: 150px;
 }
 .reasons-l {
     height: 60rem;

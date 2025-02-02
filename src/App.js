@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 import './App.css';
+import Loader from './components/Loader/Loader';
 import BackToTop from './components/BackToTop/BackToTop';
 import DropDown from './components/DropDown/DropDown';
 import Footer from './components/Footer/Footer';
@@ -11,18 +13,30 @@ import Reasons from './components/Reasons/Reasons';
 // import Testemonials from './components/Testemonials/Testemonials';
 
 const App = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulacija učitavanja (ovde možeš dodati logiku za video)
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Loader traje 2 sekunde (prilagodi po potrebi)
+  }, []);
+
   return (
     <div className="App">
-      <Hero/>
-      <Reasons/>
-      <Gallery/>
-      {/* <Testemonials/> */}
-      <Programs/>
-      <Plans/>
-      <Newsletter/>
-      <Footer/>
-      <DropDown/>
-      <BackToTop/>
+      {loading && <Loader />} {/* Loader se pojavljuje odmah */}
+
+      {/* Glavni sadržaj stranice */}
+      <Hero />
+      <Reasons />
+      <Gallery />
+      <Programs />
+      <Plans />
+      <Newsletter />
+      <Footer />
+      <DropDown />
+      <BackToTop />
     </div>
   );
 };
