@@ -5,11 +5,10 @@ import navBarData from "../../data/navBarData";
 import { FiPhone } from "react-icons/fi";
 import { HiOutlineAtSymbol } from "react-icons/hi2";
 import { FaLinkedin } from "react-icons/fa";
-import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
 
-  const currentYear = new Date().getFullYear(); 
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="footer">
@@ -29,22 +28,22 @@ const Footer = () => {
               })}
             </ul>
           </div>
-          <a className="anchor" id="footer"></a>
+          <span className="anchor" id="footer"></span>
           <div>
             <span>Radno vreme:</span>
             <span>Pon - Pet od 10:00 do 19:00</span>
             <span>Subota i nedelja na upit</span>
             <strong><a style={{ textDecoration: 'none', color: "black" }} href="tel:+381611145300"><FiPhone />+381611145300</a></strong>
-            <span>
+            <a style={{ textDecoration: 'none', color: "black", fontWeight:'bold' }} href="mailto:littleonebabyspa@gmail.com">
               <HiOutlineAtSymbol />
               littleonebabyspa@gmail.com
-            </span>
+            </a>
           </div>
           <div>
             <p>Sajt razvijen</p>
             <p className="my">Aleksandar Rasic</p>
             <p className="social-footer">
-              <a href="https://www.linkedin.com/in/aleksandar-rasic-jimmy/" target="_blank">
+              <a href="https://www.linkedin.com/in/aleksandar-rasic-jimmy/" target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
             </p>

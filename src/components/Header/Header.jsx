@@ -12,6 +12,7 @@ const Header = () => {
   const navBarLinksRef = useRef(null);
   const burgerButtonRef = useRef(null);
   const [navBar, setNavBar] = useState(false);
+  const [fixedHref, setFixedHref] = useState(false);
 
   const handleBurgerClick = () => {
     setIsBurgerActive((prev) => !prev);
@@ -38,32 +39,19 @@ const Header = () => {
 
 
 
-
-  //! SENIOR style
-  // const fixedNavBar = () => {
-  //   setNavBar(window.scrollY > 0)
-  // } // Ako window.scrollY > 0, postaviće se true, inače false.
-
   useEffect(() => {
-    // * Fixed nav bar
     const fixedNavBar = () => {
-      let scroll = window.scrollY > 0
-
-      if (scroll > 0) {
-        setNavBar(true)
-      } else {
-        setNavBar(false)
-      }
+      setNavBar(window.scrollY > 0);
+      setFixedHref(window.scrollY > 0);
     };
-
-    fixedNavBar();
-
-    window.addEventListener('scroll', (fixedNavBar));
-
+  
+    window.addEventListener('scroll', fixedNavBar);
+  
     return () => {
-      window.removeEventListener('scroll', (fixedNavBar));
-    }
+      window.removeEventListener('scroll', fixedNavBar);
+    };
   }, []);
+  
 
   return (
     <motion.div
@@ -85,15 +73,15 @@ const Header = () => {
             {navBarData.map((link, idx) => {
               return (
                 <li key={idx}>
-                  <a style={{ fontWeight: "500" }} onClick={handleBurgerClick} href={link.url}>{link.title}</a>
+                  <a className={fixedHref ? 'hrefActive' : ''} style={{ fontWeight: "500" }} onClick={handleBurgerClick} href={link.url}>{link.title}</a>
                 </li>
               );
             })}
           </ul>
         </div>
         <div className="working-hours">
-          <a href="tel:+381611145300"><span>+381611145300</span><FaPhoneVolume /></a>
-          <a href="#footer"><span>Radno vreme</span><FaClock /></a>
+          <a className={fixedHref ? 'hrefActive' : ''} href="tel:+381611145300"><span>+381611145300</span><FaPhoneVolume /></a>
+          <a className={fixedHref ? 'hrefActive' : ''} href="#footer"><span>Radno vreme</span><FaClock /></a>
           <button
             className={`burger ${isBurgerActive ? "is-active" : ""}`}
             ref={burgerButtonRef}

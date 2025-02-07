@@ -40,7 +40,7 @@
 
 .navBar-links>ul>li>a {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--light);
     font-weight: bold;
     position: relative;
 }
@@ -74,17 +74,23 @@
 .working-hours>a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
     margin-right: 10px;
+}
+
+.hrefActive {
+    color: var(--primary) !important;
 }
 
 .working-hours>a>svg {
     font-size: 2rem;
     margin-left: 5px;
-    color: var(--primary);
+    color: var(--babyColor);
     animation: zoomInOut 2s infinite;
     margin-top: 5px;
+    position: relative;
+    z-index: -1;
 }
 
 .burger {
@@ -118,14 +124,14 @@
         width: 35px;
         margin-bottom: 5px;
         height: 4px;
-        background-color: var(--primary);
+        background-color: var(--babyColor);
         border-radius: 6px;
         transition: 0.6s;
         transform-origin: 0 0;
     }
 
     .burger.is-active span {
-        background-color: var(--secondary);
+        background-color: var(--light);
     }
 
     /* Active Burger */

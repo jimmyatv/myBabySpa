@@ -1,7 +1,7 @@
 import { React, useRef } from "react";
 import "./Newsletter.css";
 import emailjs from '@emailjs/browser'
-import showerBaby from "../../assets/showerBaby.jpg";
+import showerBaby from "../../assets/showerBaby.webp";
 import { GiBabyBottle } from "react-icons/gi";
 
 const Newsletter = () => {
@@ -11,8 +11,8 @@ const Newsletter = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_em0xgui', 'template_ylgaf1l', form.current, {
-        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
-      })
+      publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+    })
       .then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
@@ -42,7 +42,12 @@ const Newsletter = () => {
               placeholder="Vaše Ime"
               required
             />
-               
+            <input
+              type="text"
+              name="user_email"
+              placeholder="Vaš e-mail"
+              required
+            />
             <input
               type="number"
               name="user_number"

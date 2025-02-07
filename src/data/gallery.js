@@ -1,13 +1,13 @@
-import image1 from '../assets/sliderImg1.jpeg';
-import image2 from '../assets/sliderImg2.jpeg';
-import image3 from '../assets/sliderImg3.jpeg';
-import image4 from '../assets/sliderImg4.jpg';
-import image5 from '../assets/sliderImg5.jpg';
-import image6 from '../assets/sliderImg6.jpg';
-import image7 from '../assets/sliderImg7.jpg';
-import image8 from '../assets/sliderImg8.jpg';
-import image9 from '../assets/sliderImg9.jpg';
-import image10 from '../assets/sliderImg10.jpg';
+import image1 from '../assets/sliderImg1.webp';
+import image2 from '../assets/sliderImg2.webp';
+import image3 from '../assets/sliderImg3.webp';
+import image4 from '../assets/sliderImg4.webp';
+import image5 from '../assets/sliderImg5.webp';
+import image6 from '../assets/sliderImg6.webp';
+import image7 from '../assets/sliderImg7.webp';
+import image8 from '../assets/sliderImg8.webp';
+import image9 from '../assets/sliderImg9.webp';
+import image10 from '../assets/sliderImg10.webp';
 
 const galleryImages = [
     {
