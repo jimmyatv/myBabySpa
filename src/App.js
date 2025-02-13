@@ -30,9 +30,9 @@ const App = () => {
       {/* Glavni sadržaj stranice */}
       <Hero />
       <Reasons />
-      <Gallery />
       <Programs />
       <Plans />
+      <Gallery />
       <Newsletter />
       <Footer />
       <DropDown />

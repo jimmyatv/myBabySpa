@@ -9,23 +9,21 @@ const Reasons = () => {
     <div className="reasons">
       <span className="anchor" id="reasons"></span>
       <div className="reasons-l">
-        <span><IoSparklesOutline />Razvoj motornih sposobnosti</span>
-        <span><IoSparklesOutline />Podrška zdravom rastu I razvoju deteta</span>
-        <span><IoSparklesOutline />Poboljšava cirkulaciju</span>
-        <span><IoSparklesOutline />Aktivira rad mozga</span>
-        <span><IoSparklesOutline />Utiče na pravilan rad nervnog sistema</span>
-        <span><IoSparklesOutline />Umirujuči efekat</span>
-        <span><IoSparklesOutline />Umanjuje grčeve kod beba</span>
+        <span><IoSparklesOutline />Podsticanje razvoja motorike i koordinacije</span>
+        <span><IoSparklesOutline />Poboljšanje snage i fleksibilnosti mišića</span>
+        <span><IoSparklesOutline />Razvoj ravnoteže i telesne svesti</span>
+        <span><IoSparklesOutline />Unapredjenje finih motoričkih veština</span>
+        <span><IoSparklesOutline />Smanjenje simptoma kolike i nelagodnosti</span>
+        <span><IoSparklesOutline />Poboljšanje cirkulacije i opuštanje mišića</span>
+        <span><IoSparklesOutline />Smanjenje stresa i anksioznosti kod beba</span>
+        <span><IoSparklesOutline />Jačanje emocionalne povezanosti izmedju roditelja i beba</span>
       </div>
       <div className="reasons-r relative">
         <div className="important container relative">
           <h3>Važno</h3>
           <span className="alert icon"><AiOutlineAlert /></span>
           <p>
-            Regularna masaža i vežbice umanjuju probleme sa hipertonusom,
-            tortikolisom, koje mogu da dovedu do različitih patologija:
-            skolioze, kifoze, ravnih stopala, displazije zglobova, rahitisa i
-            drugih patologija
+            Pružamo sigurno i opuštajuće okruženje za bebe i roditelje, uz tretmane hidroterapije i masaže zasnovane na međunarodnim standardima. Naša usluga omogućava roditeljima da se povežu sa svojom bebom, usavrše tehnike masaže i dobiju stručnu podršku, dok istovremeno obezbeđujemo najviše higijenske standarde i individualizovanu brigu prilagođenu svakoj bebi.
           </p>
         </div>
         <div className="babyFoot"><GiFootprint /></div>

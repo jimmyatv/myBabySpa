@@ -2,7 +2,7 @@
     padding: 0.5rem 2rem;
     position: relative;
     z-index: 55;
-    transition: 0.5s all ;
+    transition: 0.5s all;
     background: transparent;
 }
 
@@ -11,7 +11,7 @@
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
-    transition: 0.5s all ;
+    transition: 0.5s all;
 }
 
 .logo img {
@@ -83,14 +83,14 @@
     color: var(--primary) !important;
 }
 
-.working-hours>a>svg {
+.working-hours>a svg {
     font-size: 2rem;
     margin-left: 5px;
-    color: var(--babyColor);
     animation: zoomInOut 2s infinite;
     margin-top: 5px;
     position: relative;
     z-index: -1;
+    color: inherit;
 }
 
 .burger {
@@ -124,7 +124,7 @@
         width: 35px;
         margin-bottom: 5px;
         height: 4px;
-        background-color: var(--babyColor);
+        background-color: var(--light);
         border-radius: 6px;
         transition: 0.6s;
         transform-origin: 0 0;
@@ -224,19 +224,21 @@
 
 /* Media Query */
 @media screen and (max-width: 576px) {
-    .working-hours>a>span {
+    .working-hours>a span:nth-child(1) {
         display: none;
     }
 }
 
 @keyframes zoomInOut {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}

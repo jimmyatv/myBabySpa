@@ -16,7 +16,7 @@
 
   --mainText: 'Cormorant', serif;
   --secondaryText: 'Montserrat', sans-serif;
-  --babyPlan: linear-gradient(245deg, #c18fc6 1.14%, #efe3f0 100.75%);
+  --babyPlan: linear-gradient(65deg, #8a4f91 1.14%, #bb8cbc 100.75%);
 
   --transition: .3s linear;
 }
@@ -65,16 +65,17 @@ span {
   border: 2px solid var(--primary);
   cursor: pointer;
   transition: var(--transition);
+  max-width: fit-content;
 }
 
 .btn:hover {
-  background: transparent;
+  background: var(--light);
   color: var(--primary);
   font-weight: 500;
 }
 
 .container {
-  width: 80%;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -95,6 +96,10 @@ span {
   text-align: center;
   padding: 3rem;
   letter-spacing: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .anchor {

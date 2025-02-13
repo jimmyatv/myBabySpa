@@ -16,8 +16,10 @@ const Hero = () => {
     <div className="hero">
       <Header />
       <div className="headings">
-        <h1> <span>Little one baby spa</span> <br /> Vaše mesto za nežnu brigu i opuštanje!</h1>
-        <p>Razvojne vežbe uz masažu i hidroterapiju za bebe i decu</p>
+        <h1 className="text-center">Little one baby spa</h1>
+        <p className="text-center">Vaše mesto za nežnu brigu i opuštanje!</p>
+        <p className="text-center">Uživajte u blagodetima hidroterapije i masaže za mamu i bebu u opuštajućem okruženju</p>
+        <a href="#newsletter" className="btn">Zakazati</a>
       </div>
       {/* Video Background */}
       <video
@@ -39,7 +41,7 @@ const Hero = () => {
       )}
 
       {/* Main Hero */}
-      <div className="hero-main">
+      {/* <div className="hero-main">
         <div className="the-best-babyspa">
           <motion.div
             initial={{ left: "160px" }}
@@ -50,7 +52,7 @@ const Hero = () => {
             Najbolji <span>baby spa</span> u gradu
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

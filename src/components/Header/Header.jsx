@@ -4,7 +4,7 @@ import Logo from "../../assets/logoBaby.png";
 import navBarData from "../../data/navBarData";
 import { FaPhoneVolume, FaClock } from "react-icons/fa6";
 import { motion } from 'framer-motion';
-import {headerVariants} from '../../data/motion';
+import { headerVariants } from '../../data/motion';
 
 
 const Header = () => {
@@ -44,14 +44,14 @@ const Header = () => {
       setNavBar(window.scrollY > 0);
       setFixedHref(window.scrollY > 0);
     };
-  
+
     window.addEventListener('scroll', fixedNavBar);
-  
+
     return () => {
       window.removeEventListener('scroll', fixedNavBar);
     };
   }, []);
-  
+
 
   return (
     <motion.div
@@ -80,8 +80,8 @@ const Header = () => {
           </ul>
         </div>
         <div className="working-hours">
-          <a className={fixedHref ? 'hrefActive' : ''} href="tel:+381611145300"><span>+381611145300</span><FaPhoneVolume /></a>
-          <a className={fixedHref ? 'hrefActive' : ''} href="#footer"><span>Radno vreme</span><FaClock /></a>
+          <a className={fixedHref ? 'hrefActive' : ''} href="tel:+381611145300"><span>+381611145300</span><span ><FaPhoneVolume /></span></a>
+          <a className={fixedHref ? 'hrefActive' : ''} href="#footer"> <span>Radno vreme</span><span ><FaClock /></span></a>
           <button
             className={`burger ${isBurgerActive ? "is-active" : ""}`}
             ref={burgerButtonRef}
