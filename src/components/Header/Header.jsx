@@ -62,8 +62,12 @@ const Header = () => {
       className={`header ${navBar ? 'navBar-active' : ''}`}>
       <div className="navBar">
         <div className="logo">
-          <img src={Logo} alt="" />
+          <a href="/">
+            <img src={Logo} alt="Logo icon" />
+          </a>
         </div>
+
+
         <div
           className={`navBar-links ${isBurgerActive ? "is-active" : ""}`}
           id="navBarLinks"
@@ -87,9 +91,9 @@ const Header = () => {
             ref={burgerButtonRef}
             onClick={handleBurgerClick}
           >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span className={fixedHref ? 'hrefActive' : ''}></span>
+            <span className={fixedHref ? 'hrefActive' : ''}></span>
+            <span className={fixedHref ? 'hrefActive' : ''}></span>
           </button>
         </div>
       </div>

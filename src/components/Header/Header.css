@@ -129,6 +129,9 @@
         transition: 0.6s;
         transform-origin: 0 0;
     }
+    .burger span.hrefActive {
+        background-color: var(--primary);
+    }
 
     .burger.is-active span {
         background-color: var(--light);
