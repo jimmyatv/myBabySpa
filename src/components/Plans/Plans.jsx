@@ -9,7 +9,7 @@ const Plans = () => {
     <div className="plans">
       <span className="anchor" id="plans"></span>
       <h2 className="main-text">Opustite se zajedno!</h2>
-      <div className="features container">
+      <div className="features">
         {plansData.map((plan, idx) => {
           return (
             <div className="plan" key={idx}>

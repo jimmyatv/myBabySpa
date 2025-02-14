@@ -89,6 +89,15 @@
 }
 
 /* Media Query */
+/* min-width 991px */
+@media screen and (min-width: 991px) {
+    .features {
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+/* max-width 1200px */
 @media screen and (max-width: 1200px) {
     .plans {
         height: fit-content;
