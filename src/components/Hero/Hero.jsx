@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Hero.css";
 import Header from "../Header/Header";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import heroVideo from "../../assets/heroVideo.mp4"; // Uvezi video
 
 const Hero = () => {
-  const transition = { type: "spring", duration: 3 };
+  // const transition = { type: "spring", duration: 3 };
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   const handleVideoLoad = () => {

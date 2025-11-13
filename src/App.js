@@ -25,7 +25,8 @@ const App = () => {
 
   return (
     <div className="App">
-      {loading && <Loader />} {/* Loader se pojavljuje odmah */}
+
+      {loading && <Loader />}
 
       {/* Glavni sadržaj stranice */}
       <Hero />

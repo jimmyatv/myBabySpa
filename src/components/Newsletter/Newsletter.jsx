@@ -10,7 +10,7 @@ const Newsletter = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_em0xgui', 'template_ylgaf1l', form.current, {
+    emailjs.sendForm('service_43lx57f', 'template_99qce4o', form.current, {
       publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
     })
       .then(
