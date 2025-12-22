@@ -53,7 +53,7 @@ const DropDown = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:rasic.alexandar@gmail.com"
+          href="mailto:littleonebabyspa@gmail.com"
           className={`btn-style ${isOpen ? "a-active" : ""}`}
         >
           <GoMail />
